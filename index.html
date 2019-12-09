@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg">
+        <div class="top_container">
+            <h1 class="heading"><b>Immigration Impact On Australia</b></h1>
+            <div class="sun_container">
+                <div class="col-md-4" style="width: 200px">
+                    <img src="assets/gifs/australiaFlag.gif" width="100%" height="100%"/>
+                </div>
+            </div>
+            <div class="topright">
+                <button class="collapsible">
+<!--                    <i class="fa fa-bars" style="width: 50px; height: 50px"></i>-->
+                </button>
+                <div class="content">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="introduction.html">Introduction Page</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="positiveEffect.html">Positive Impact</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="negativeEffect.html">Negative Impact</a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="mySolution.html">My Solution</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>>
+
+            </div>
+
+    <div class="container">
+
+        <div class="col-md-12" >
+            <div class="row" id="box">
+                <div style="width: 50%; padding-top: 30px">
+                    <video width="100%" height="240" controls>
+                        <source src="assets/videos/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+                <div style="left: auto;width: 50%;padding-left: 20px;padding-top: 10px">
+                    <h1 align="center"style="padding-left: 5%;font-weight: bolder"><i>What is Immigration?</i></h1>
+                    <p style="font-size: medium;">The standard definition of economics is <b><i>the allocation of scarce resources among competing
+                    ends</i></b>. Immigration, process through which individuals become permanent residents or citizens
+                    of another country. Historically, the process of immigration has been of great social, economic,
+                    and cultural benefit to states. The immigration experience is long and varied and has in many cases
+                    resulted in the development of multicultural societies; many modern states are characterized by a wide
+                        variety of cultures and ethnicities that have derived from previous periods of immigration.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    </div>
+        <a class="prev" href="mySolution.html">&#10094;</a>
+        <a class="next" href="introduction.html">&#10095;</a>
+    <div class="earthCrackFooter">
+
+    </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight){
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+</body>
+</html>

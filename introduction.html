@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assets/CSS/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body class="bg">
+<div class="top_container">
+    <h1 class="heading"><b>Immigration Impact On Australia</b></h1>
+    <div class="sun_container">
+        <div class="col-md-4" style="width: 200px">
+            <img src="assets/gifs/australiaFlag.gif" width="100%" height="100%"/>
+        </div>
+    </div>
+    <div class="topright">
+        <button class="collapsible">
+            <!--                    <i class="fa fa-bars" style="width: 50px; height: 50px"></i>-->
+        </button>
+        <div class="content">
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="index.html">Home Page</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="positiveEffect.html">Positive Impact</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="negativeEffect.html">Negative Impact</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="mySolution.html">My Solution</a>
+                </li>
+            </ul>
+        </div>
+    </div>>
+
+</div>
+
+
+    <div class="container">
+
+        <div class="col-md-12" >
+
+
+            <div class="row" id="box">
+                <div class="col-md-4" id="windmill" style="width: 50%">
+                    <img src="assets/gifs/intro.gif" width="100%" height="100%"/>
+                </div>
+                <div class="col-md-8" id="windmilldesc" style="width: 50%">
+                    <h1 align="center"style="padding-left: 5%;font-weight: bolder"><i>Introduction</i></h1>
+                    <p style="font-size: medium;">Stimulate your mind as you test your typing speed with this standard
+                        English paragraph typing test. Watch your typing speed and accuracy
+                        increase as you learn about a variety of new topics! Over 40 typing
+                        test selections available.
+
+                        If you don't like a test prompt, you can get a different (random)
+                        prompt with the "change test" button - or select a specific paragraph
+                        to type from the list below. To find out how fast you type, just start
+                        typing in the blank textbox on the right of the test prompt. You will
+                        see your progress, including errors on the left side as you type.
+                        In order to complete the test and save your score, you need to get 100% accuracy.
+                        You can fix errors as you go, or correct them at the end with the help of the spell checker.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+        <a class="prev" href="index.html">&#10094;</a>
+        <a class="next" href="positiveEffect.html">&#10095;</a>
+    <div class="earthCrackFooter">
+
+    </div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+                content.style.maxHeight = null;
+            } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+            }
+        });
+    }
+</script>
+</body>
+</html>
