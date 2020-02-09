@@ -1,3 +1,6 @@
+body, html {
+  height: 100%;
+}
 .top_container{
     position: absolute;
     top: 0;
@@ -49,7 +52,8 @@
 }
 
 .descr_container{
-    padding-top: 9%;
+    position: relative;
+    top: 23%;
 }
 
 .content {
@@ -86,13 +90,13 @@
     /* The image used */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../images/immigration_bg.jpg");
 
-    /* Full height */
-    height: 100%;
+  /* Full height */
+  height: 100%;
 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .cloud{
