@@ -48,6 +48,10 @@
 
 }
 
+.descr_container{
+    padding-top: 9%;
+}
+
 .content {
     width: 200px;
     font-size: medium;
@@ -68,7 +72,7 @@
 .rightColumn {
     float: left;
     width: 50%;
-    padding-left: 40px;
+    padding-left: 10px;
     padding-top: 20px;
 }
 
@@ -85,9 +89,9 @@
     /* Full height */
     height: 100%;
 
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
 }
 
@@ -103,14 +107,14 @@
 
 .container{
 color: aliceblue;
-    margin-top: 250px;
+    /* margin-top: 250px; */
 
 }
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 60%;
+    top: 50%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
